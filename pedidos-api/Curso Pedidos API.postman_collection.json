@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "b11d240a-5c5d-4e4d-960d-769a1d4f78d2",
+		"name": "Curso Pedidos API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18923630"
+	},
+	"item": [
+		{
+			"name": "Criar pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cliente\": \"Anny Marcielly Caldas\",\r\n    \"emailNotificacao\": \"wendelsegadilha99@gmail.com\",\r\n    \"itens\": [\r\n        {\r\n            \"produto\": {\r\n                \"nome\": \"Fone de Ouvido Multilaser A100\",\r\n                \"valor\": 35.00\r\n            },\r\n            \"quantidade\": 1\r\n        }\r\n    ],\r\n    \"valorTotal\": 35.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/pedidos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
